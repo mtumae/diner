@@ -6,4 +6,12 @@ export default defineSchema({
 		text: v.string(),
 		completed: v.boolean(),
 	}),
+
+	items:defineTable({
+		name: v.string(),
+		description: v.string(),
+		price: v.optional(v.number()),
+		
+	})
 });
+
