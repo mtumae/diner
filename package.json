@@ -1,11 +1,11 @@
 {
   "name": "diner",
+  "devDependencies": {
+    "turbo": "^2.5.4",
+    "@biomejs/biome": "^2.2.0"
+  },
+  "packageManager": "bun@1.2.23",
   "private": true,
-  "type": "module",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "scripts": {
     "check": "biome check --write .",
     "dev": "turbo dev",
@@ -16,10 +16,9 @@
     "dev:server": "turbo -F @diner/backend dev",
     "dev:setup": "turbo -F @diner/backend dev:setup"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "turbo": "^2.5.4",
-    "@biomejs/biome": "^2.2.0"
-  },
-  "packageManager": "bun@1.2.23"
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
