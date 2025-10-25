@@ -26,7 +26,15 @@
 			"output": "static",
 			"favicon": "./assets/images/favicon.png"
 		},
-		"plugins": [
+		"plugins": 
+		[
+
+			 ["expo-camera",
+				{
+				"cameraPermission": "Allow $(diner) to access your camera",
+				"microphonePermission": "Allow $(diner) to access your microphone",
+				"recordAudioAndroid": true
+				}],
 			"expo-router",
 			[
 				"expo-splash-screen",

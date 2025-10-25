@@ -11,7 +11,18 @@ export default defineSchema({
 		name: v.string(),
 		description: v.string(),
 		price: v.optional(v.number()),
-		
+		orders:v.number(),
+		imageUrl:v.string(),
+	}),
+
+
+	promotions:defineTable({
+		title: v.string(),
+		description: v.string(),
+		imageUrl:v.string(),
 	})
+
+
+
 });
 
