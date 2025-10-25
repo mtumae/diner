@@ -27,11 +27,11 @@ export default function TabLayout() {
 		>
 			
 			<Tabs.Screen
-				name="two"
+				name="promotions"
 				options={{
-					title: "Explore",
+					title: "Promotions",
 					tabBarIcon: ({ color }) => (
-						<TabBarIcon name="compass" color={color} />
+						<TabBarIcon name="thumb-tack" color={color} />
 					),
 				}}
 			/>

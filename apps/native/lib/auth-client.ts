@@ -16,4 +16,11 @@ export const authClient = createAuthClient({
 		}),
 		convexClient(),
 	],
+	socialProviders: {
+		prompt: "select_account", 
+		google: {
+			clientId:"YOUR_GOOGLE_OAUTH_CLIENT_ID",
+			clientSecret: "YOUR_GOOGLE_CLIENT_SECRET",
+		},
+	},
 });
